@@ -17,8 +17,8 @@
     <!-- Navbar -->
     <nav class="navbar navbar-dark navbar-expand-lg sticky-top">
       <div class="container">
-        <a class="navbar-brand" href="#"
-          ><img src="images/logo.png" alt="" width="70px" height="70px"
+        <a href="index.html"
+          ><img src="images/logo.png" alt="" class="logo"
         /></a>
         <button
           class="navbar-toggler"
@@ -34,13 +34,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/index.html"
+              <a class="nav-link active" aria-current="page" href="index.html"
                 >Home</a
               >
             </li>
             <li class="nav-item dropdown">
               <a
-                class="nav-link active dropdown-toggle"
+                class="nav-link dropdown-toggle"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -49,10 +49,12 @@
                 Our Company
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item active" href="#">About Us</a></li>
+                <li>
+                  <a class="dropdown-item" href="/about.html">About Us</a>
+                </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="/certification.html"
+                  <a class="dropdown-item" href="certification.html"
                     >Certification</a
                   >
                 </li>
@@ -71,6 +73,9 @@
           </ul>
           <a href="" class="seacrh ps-4">
             <img src="images/search-logo.png" alt="" />
+          </a>
+          <a href="login.html" class="ps-5">
+            <button class="login-btn">LOGIN</button>
           </a>
         </div>
       </div>
@@ -108,7 +113,9 @@
               by existing middlemen.
             </p>
           </div>
-          <div class="col"><img src="images/item-2.png" alt="" /></div>
+          <div class="col">
+            <img src="images/item-2.png" alt="" class="img-about" />
+          </div>
         </div>
         <!--  -->
         <div class="row text-center m-5">
@@ -159,16 +166,16 @@
           <div class="row content-3 mt-5">
             <div class="d-flex">
               <img src="images/line-team.png" alt="" class="line-team" />
-              <h3 class="text-center">OUR TEAM</h3>
+              <h5 class="con-team px-3">OUR TEAM</h5>
               <img src="images/line-team.png" alt="" class="line-team" />
             </div>
             <div class="col">
               <img src="images/team-1.png" alt="" />
-              <h3>TIMOTEUS SIHOMBING</h3>
+              <h5>TIMOTEUS SIHOMBING</h5>
             </div>
             <div class="col">
               <img src="images/team-1.png" alt="" />
-              <h3>PANTAS HUTAPEA</h3>
+              <h5>PANTAS HUTAPEA</h5>
             </div>
             <div class="col"><img src="images/team-1.png" alt="" /></div>
             <div class="col"><img src="images/team-1.png" alt="" /></div>
@@ -195,14 +202,25 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <h2>Contact Information</h2>
-            <p>WHATSAPP 081390290961</p>
-            <p>TELEPON 0813902909261</p>
-            <p>GMAIL Teushaseahatovlinorganic@gmail.com</p>
+            <h5>Contact Information</h5>
+            <p>
+              <img src="images/wa-foot.png" alt="" class="pe-2" />WHATSAPP
+              081390290961
+            </p>
+            <p>
+              <img src="images/tlp-foot.png" alt="" class="pe-2" />TELEPON
+              0813902909261
+            </p>
+            <p>
+              <img src="images/mail-foot.png" alt="" class="pe-2" />GMAIL
+              Teushaseahatovlinorganic@gmail.com
+            </p>
           </div>
-          <div class="col">
+          <div class="col me-5">
             <div class="d-flex">
-              <h2>Address</h2>
+              <h5>
+                <img src="images/map-foot.png" alt="" class="pe-2" />Address
+              </h5>
             </div>
             <p>
               Jl. Witana Harja Block C No.119, West Pamulang, Pamulang District,
@@ -210,11 +228,22 @@
             </p>
           </div>
           <div class="col">
-            <h2>Social Media</h2>
-            <p>FACEBOOK</p>
-            <p>LINKEDIN</p>
+            <h5>Social Media</h5>
+            <p>
+              <img src="images/icon-fb-foot.png" alt="" class="pe-2" />FACEBOOK
+            </p>
+            <p>
+              <img
+                src="images/instagram-foot.png"
+                alt=""
+                class="pe-2"
+              />LINKEDIN
+            </p>
           </div>
-          <p>© Copyright 2022 | CV.Hasea Hatovlin Cocunut Arenga Organic</p>
+          <hr style="color: black; border: 2px solid black" class="mt-2" />
+          <p class="pt-2">
+            © Copyright 2022 | CV.Hasea Hatovlin Cocunut Arenga Organic
+          </p>
         </div>
       </div>
     </footer>
