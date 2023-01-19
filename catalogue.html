@@ -10,6 +10,10 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>CV Hasea</title>
   </head>
@@ -49,7 +53,7 @@
                 Our Company
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">About Us</a></li>
+                <li><a class="dropdown-item" href="about.html">About Us</a></li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
                   <a class="dropdown-item" href="/certification.html"
@@ -75,6 +79,13 @@
           <a href="" class="seacrh ps-4">
             <img src="images/search-logo.png" alt="" />
           </a>
+          <a href="login.html" class="px-2">
+            <button class="login-btn">LOGIN</button>
+          </a>
+          <a href="checkout.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+          <div id="google_translate_element" style="" class="ps-2"></div>
         </div>
       </div>
     </nav>
@@ -84,7 +95,7 @@
     <section>
       <div class="content-catalogue">
         <div class="blur-background w-100">
-          <div class="container text-center mt-5">
+          <div class="container text-center isi-hero">
             <h1>DETERMINE YOUR BEST PACKAGE</h1>
             <img src="images/line-title.png" alt="" />
             <p>
@@ -99,60 +110,12 @@
     <section class="m-5">
       <div class="container">
         <div class="row">
-          <!-- card 1 -->
+          <div class="col-3"><h1>Category</h1></div>
           <div class="col">
-            <div class="card" style="width: 18rem">
-              <img src="images/card-1.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">
-                  What Makes liquid Palm Sugar taste classy?
-                </h5>
-                <p class="card-text">
-                  Rahasia Kelezatan Gula aren cair ada pada 100% kandungan halal
-                  bebas antibiotik. Kami menggunakan cairan buah kelapa
-                  berkualitas dari bahan alami tanpa pengawet....
-                </p>
-                <a href="#" class="btn btn-success">Pesan Sekarang</a>
-              </div>
-            </div>
-          </div>
-          <!-- card 2 -->
-          <div class="col">
-            <div class="card" style="width: 18rem">
-              <img src="images/card-1.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">
-                  What Makes liquid Palm Sugar taste classy?
-                </h5>
-                <p class="card-text">
-                  Rahasia Kelezatan Gula aren cair ada pada 100% kandungan halal
-                  bebas antibiotik. Kami menggunakan cairan buah kelapa
-                  berkualitas dari bahan alami tanpa pengawet....
-                </p>
-                <a href="#" class="btn btn-success">Pesan Sekarang</a>
-              </div>
-            </div>
-          </div>
-          <div class="col mb-5">
-            <div class="card" style="width: 18rem">
-              <img src="images/card-1.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">
-                  What Makes liquid Palm Sugar taste classy?
-                </h5>
-                <p class="card-text">
-                  Rahasia Kelezatan Gula aren cair ada pada 100% kandungan halal
-                  bebas antibiotik. Kami menggunakan cairan buah kelapa
-                  berkualitas dari bahan alami tanpa pengawet....
-                </p>
-                <a href="#" class="btn btn-success">Pesan Sekarang</a>
-              </div>
-            </div>
-          </div>
-          <div class="container">
             <div class="row">
-              <div class="col">
-                <div class="card" style="width: 18rem">
+              <!-- card 1 -->
+              <div class="col-3">
+                <div class="card" style="width: 15rem">
                   <img src="images/card-1.png" class="card-img-top" alt="..." />
                   <div class="card-body">
                     <h5 class="card-title">
@@ -163,12 +126,15 @@
                       halal bebas antibiotik. Kami menggunakan cairan buah
                       kelapa berkualitas dari bahan alami tanpa pengawet....
                     </p>
-                    <a href="#" class="btn btn-success">Pesan Sekarang</a>
+                    <a href="produk.html" class="btn btn-success"
+                      >Pesan Sekarang</a
+                    >
                   </div>
                 </div>
               </div>
-              <div class="col">
-                <div class="card" style="width: 18rem">
+              <!-- card 2 -->
+              <div class="col-3">
+                <div class="card" style="width: 15rem">
                   <img src="images/card-1.png" class="card-img-top" alt="..." />
                   <div class="card-body">
                     <h5 class="card-title">
@@ -179,12 +145,14 @@
                       halal bebas antibiotik. Kami menggunakan cairan buah
                       kelapa berkualitas dari bahan alami tanpa pengawet....
                     </p>
-                    <a href="#" class="btn btn-success">Pesan Sekarang</a>
+                    <a href="produk.html" class="btn btn-success"
+                      >Pesan Sekarang</a
+                    >
                   </div>
                 </div>
               </div>
-              <div class="col">
-                <div class="card" style="width: 18rem">
+              <div class="col-3 mb-5">
+                <div class="card" style="width: 15rem">
                   <img src="images/card-1.png" class="card-img-top" alt="..." />
                   <div class="card-body">
                     <h5 class="card-title">
@@ -195,7 +163,82 @@
                       halal bebas antibiotik. Kami menggunakan cairan buah
                       kelapa berkualitas dari bahan alami tanpa pengawet....
                     </p>
-                    <a href="#" class="btn btn-success">Pesan Sekarang</a>
+                    <a href="produk.html" class="btn btn-success"
+                      >Pesan Sekarang</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-3">
+                    <div class="card" style="width: 15rem">
+                      <img
+                        src="images/card-1.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          What Makes liquid Palm Sugar taste classy?
+                        </h5>
+                        <p class="card-text">
+                          Rahasia Kelezatan Gula aren cair ada pada 100%
+                          kandungan halal bebas antibiotik. Kami menggunakan
+                          cairan buah kelapa berkualitas dari bahan alami tanpa
+                          pengawet....
+                        </p>
+                        <a href="produk.html" class="btn btn-success"
+                          >Pesan Sekarang</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card" style="width: 15rem">
+                      <img
+                        src="images/card-1.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          What Makes liquid Palm Sugar taste classy?
+                        </h5>
+                        <p class="card-text">
+                          Rahasia Kelezatan Gula aren cair ada pada 100%
+                          kandungan halal bebas antibiotik. Kami menggunakan
+                          cairan buah kelapa berkualitas dari bahan alami tanpa
+                          pengawet....
+                        </p>
+                        <a href="produk.html" class="btn btn-success"
+                          >Pesan Sekarang</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card" style="width: 15rem">
+                      <img
+                        src="images/card-1.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          What Makes liquid Palm Sugar taste classy?
+                        </h5>
+                        <p class="card-text">
+                          Rahasia Kelezatan Gula aren cair ada pada 100%
+                          kandungan halal bebas antibiotik. Kami menggunakan
+                          cairan buah kelapa berkualitas dari bahan alami tanpa
+                          pengawet....
+                        </p>
+                        <a href="produk.html" class="btn btn-success"
+                          >Pesan Sekarang</a
+                        >
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
