@@ -1,12 +1,16 @@
-<html lang="en">
+<html lang="en" data-bs-theme-value="light">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
     <link
@@ -17,6 +21,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
     <title>CV Hasea</title>
   </head>
@@ -65,7 +70,7 @@
             </li>
             <li>
               <a class="nav-link" aria-current="page" href="/catalogue.html"
-                >Shop</a
+                >Catalogue</a
               >
             </li>
             <li class="nav-item">
@@ -74,17 +79,20 @@
               >
             </li>
           </ul>
-          <button onclick="darkMode()" class="tombol-dark">Mode Malam</button>
-          <a href="" class="seacrh ps-4">
-            <img src="images/search-logo.png" alt="" />
-          </a>
-          <a href="login.html" class="px-2">
-            <button class="login-btn">LOGIN</button>
-          </a>
-          <a href="checkout.html">
-            <i class="fa-solid fa-cart-shopping"></i>
-          </a>
-          <div id="google_translate_element" style="" class="ps-2"></div>
+          <!-- dark mode -->
+
+          <!-- dark mode end -->
+
+          <div class="form-check form-switch link-light nav-link ps-5 pt-1">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              role="switch"
+              id="checkbox"
+              onclick="darkMode()"
+            />
+            <label class="form-check-label" for="checkbox">Dark Mode</label>
+          </div>
         </div>
       </div>
     </nav>
@@ -108,20 +116,17 @@
               more than what they can now. Even though I'm still young (22 years
               old).
             </p>
-            <div class="d-flex justify-content-center">
-              <a href="http://wa.me/6281390290961" target="_blank">
-                <button class="tombol-order mt-5">Order Now</button>
-              </a>
-            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Beranda End -->
+    <!-- Beranda End -->2
     <section class="m-5">
       <div class="container">
         <div class="row">
-          <div class="col-5"><img src="images/item-1.png" alt="" /></div>
+          <div class="col-5">
+            <img src="images/item-1.png" alt="" data-aos="fade-up" />
+          </div>
           <div class="col-7">
             <h1>CV. HASEA HATOVLIN COCONUT ARENGA ORGANIC</h1>
             <p>
@@ -133,31 +138,60 @@
             </p>
           </div>
         </div>
+
         <!--  -->
         <div class="row content-2 text-center">
-          <div class="col">
+          <h1 class="pb-5">OUR PRODUCT</h1>
+          <div class="col" data-aos="flip-left">
             <img src="images/product-1.png" alt="" />
             <h3>GULA KELAPA SEMUT</h3>
+            <p style="text-align: justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit non
+              eligendi enim, necessitatibus vel saepe, provident illo laboriosam
+              accusantium ut commodi quisquam, blanditiis molestiae deserunt
+              fugit temporibus quas corrupti officia!
+            </p>
             <button class="tombol-view mt-3">VIEW MORE</button>
           </div>
-          <div class="col">
+          <div class="col" data-aos="flip-right" data-aos="duration: 3000">
             <img src="images/product-2.png" alt="" />
             <h3>GULA CETAK AREN</h3>
+            <p style="text-align: justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+              quam qui excepturi aut recusandae voluptatum nulla quas,
+              cupiditate vel similique voluptate sunt deleniti omnis, culpa
+              repudiandae quia provident corporis eos ulalalalaalala!
+            </p>
             <button class="tombol-view mt-3">VIEW MORE</button>
           </div>
-          <div class="col">
+          <div class="col" data-aos="flip-left">
             <img src="images/product-3.png" alt="" />
             <h3>GULA AREN CAIR</h3>
+            <p style="text-align: justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit non
+              eligendi enim, necessitatibus vel saepe, provident illo laboriosam
+              accusantium ut commodi quisquam, blanditiis molestiae deserunt
+              fugit temporibus quas corrupti officia!
+            </p>
             <button class="tombol-view mt-3">VIEW MORE</button>
           </div>
         </div>
         <div class="row content-3">
           <h1 class="text-center mb-5">TESTIMONY CUSTOMER</h1>
           <div class="col-5">
-            <img src="images/testimoni-person.png" alt="" />
+            <img
+              src="images/testimoni-person.png"
+              alt=""
+              data-aos="fade-left"
+              data-aos-duration="5000"
+            />
           </div>
           <div class="col-7 mt-5">
-            <div class="card-testimoni p-5">
+            <div
+              class="card-testimoni p-5"
+              data-aos="fade-up"
+              data-aos-duration="5000"
+            >
               <div class="container">
                 <h3>Dr. Ruth Deanita</h3>
                 <p>
@@ -174,14 +208,12 @@
         </div>
       </div>
     </section>
-    <div class="content-4 w-100 text-center">
+    <div class="content-4 w-100 text-center blur">
       <h1 class="pt-5">IT'S TIME TO TRY OUR SUGAR PRODUCTS</h1>
       <p>
         Consult your sugar needs with our team to get insight and offer the best
         price according to your shopping budget.
       </p>
-
-      <button class="tombol-order mt-5">Order Now</button>
     </div>
     <div class="text-center">
       <iframe
@@ -194,7 +226,16 @@
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     </div>
-
+    <a href="https://wa.me/6281234567890" target="_blank">
+      <div class="fixed-bottom">
+        <iconify-icon
+          icon="ic:round-message"
+          style="color: green; margin: 20px"
+          width="70"
+          height="70"
+        ></iconify-icon>
+      </div>
+    </a>
     <!-- FOOTER -->
     <footer>
       <div class="container">
@@ -242,16 +283,13 @@
           <p class="pt-2">
             © Copyright 2022 | CV.Hasea Hatovlin Cocunut Arenga Organic
           </p>
-          <div class="toggle">
-            <i class="far fa-sun"></i>
-          </div>
         </div>
       </div>
     </footer>
     <!-- JavaScript Bundle with Popper -->
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
     <script type="text/javascript">
@@ -270,6 +308,11 @@
       type="text/javascript"
       src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
     ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="script.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
   </body>
 </html>

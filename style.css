@@ -7,6 +7,9 @@
   --bg-primary: #787878;
 }
 
+body {
+  background-color: rgb(250, 250, 250);
+}
 .dark {
   background-color: #524a4e;
   color: white;
@@ -34,6 +37,12 @@
   padding: 5px;
   background-color: grey;
   color: white;
+}
+
+.icon-darkmode {
+  color: white;
+  width: 20px;
+  height: 20px;
 }
 
 .tombol-dark:hover {
@@ -92,6 +101,10 @@
   padding-top: 100px;
 }
 
+.blur {
+  background-color: rgba(47, 46, 65, 0.25);
+}
+
 .tombol-order {
   height: 53px;
   width: 194px;
@@ -110,16 +123,16 @@
 }
 
 .content-2 {
-  margin-top: 200px;
+  margin-top: 100px;
   margin-bottom: 100px;
 }
 
 .tombol-view {
-  height: 62px;
+  padding: 10px;
   width: 220px;
-  left: 101px;
-  top: 1796px;
-  border-radius: 6px;
+  text-decoration: none;
+
+  border-radius: 20px;
   border: none;
   background-color: var(--primary-color);
   color: white;
@@ -157,8 +170,7 @@
   line-height: 66px;
   letter-spacing: 0em;
   text-align: center;
-  color: #524a4e;
-  text-shadow: 2px 2px white;
+  color: #fefefe;
 }
 
 .content-4 p {
@@ -168,8 +180,7 @@
   line-height: 27px;
   letter-spacing: 0em;
   text-align: center;
-  color: #524a4e;
-  text-shadow: 2px 2px white;
+  color: #fefefe;
 }
 
 /* ABOUT */
@@ -234,6 +245,15 @@
   height: 100vh;
 }
 
+.kartu-katalog {
+  width: 300px;
+  height: 370px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
 /* CONTACT */
 .content-contact {
   background: url(images/bg-5.png);
@@ -272,4 +292,9 @@ footer {
   background-color: #787878;
   color: #50b849;
   transition: 0.3s ease;
+}
+
+.whatsapp {
+  position: fixed;
+  border: 3px solid black;
 }
