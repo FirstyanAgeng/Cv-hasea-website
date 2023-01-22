@@ -36,7 +36,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -59,7 +59,9 @@
               </ul>
             </li>
             <li>
-              <a class="nav-link active" aria-current="page" href="/">Shop</a>
+              <a class="nav-link active" aria-current="page" href="/"
+                >Catalogue</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="/contact.html"
@@ -86,45 +88,14 @@
     <div class="container">
       <div class="row my-5">
         <div class="col">
-          <img src="images/card-4.png" alt="" class="w-100 mt-3" />
+          <img src="images/card-4.png" alt="" class="w-100 mt-5" />
         </div>
         <div class="col">
-          <<<<<<< HEAD
-          <h1>GULA AREN CAIR</h1>
-          <h2>
-            <span style="text-decoration: line-through">Rp. 35.000</span>
-            <span style="color: #50b849">20.000</span>
-            <span
-              style="
-                background-color: #50b849;
-                color: white;
-                padding: 10px;
-                border-radius: 10px;
-              "
-              >43% off</span
-            >
-          </h2>
-          <p>
-            Made from unrefined brown sugar, our syrup is rich in minerals and
-            flavors. It is suitable for milk-based drink, especially with the
-            viscosity that will create beautiful pattern on the wall of your
-            cup. It is naturally gluten free and vegan too!
-          </p>
-          <p>Product description</p>
-          <ul>
-            <li>No preservatives</li>
-            <li>Liquid Form</li>
-            <li>Dark brown color</li>
-            <li>Aren's distinctive taste and aroma</li>
-            <li>Brix 70% to 78%</li>
-            <li>Pure palm sap raw material</li>
-          </ul>
-          =======
           <div class="d-flex">
-            <button>Deskripsi</button>
-            <button>Nutrisi</button>
+            <button onclick="katalog2()" class="btn-desk">Deskripsi</button>
+            <button onclick="katalog()" class="btn-nutrition">Nutrisi</button>
           </div>
-          <div class="deskripsi-produk">
+          <div id="deskripsiProduk">
             <h1>GULA AREN CAIR</h1>
             <h2>
               <span style="text-decoration: line-through">Rp. 35.000</span>
@@ -133,8 +104,9 @@
                 style="
                   background-color: #50b849;
                   color: white;
-                  padding: 10px;
+                  padding: 5px;
                   border-radius: 10px;
+                  font-size: 20px;
                 "
                 >43% off</span
               >
@@ -155,13 +127,27 @@
               <li>Pure palm sap raw material</li>
             </ul>
           </div>
-          >>>>>>> 32a960b (add fitur dark mode)
+          <div id="nutrisiProduk">
+            <h1>Nutrition Facts</h1>
+            <p>protein : 0.5 gram</p>
+            <p>Product Nutrition</p>
+            <ul>
+              <li>No preservatives</li>
+              <li>Liquid Form</li>
+              <li>Dark brown color</li>
+              <li>Aren's distinctive taste and aroma</li>
+              <li>Brix 70% to 78%</li>
+              <li>Pure palm sap raw material</li>
+            </ul>
+          </div>
+
           <div class="text-center">
             <button class="tombol-order">Order Now</button>
           </div>
         </div>
       </div>
     </div>
+
     <!-- Akhir Produk -->
     <footer>
       <div class="container">
@@ -218,5 +204,7 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
+    <script src="fungsiKatalog.js"></script>
   </body>
 </html>
