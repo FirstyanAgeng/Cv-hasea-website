@@ -1,4 +1,4 @@
-<html lang="en" data-bs-theme-value="light">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,10 +16,6 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
@@ -46,28 +42,11 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Our Company
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="/about.html">About Us</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="certification.html"
-                    >Certification</a
-                  >
-                </li>
-              </ul>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About Us</a>
             </li>
+
             <li>
               <a class="nav-link" aria-current="page" href="/catalogue.html"
                 >Catalogue</a
@@ -104,7 +83,7 @@
       <div class="content-beranda">
         <div class="blur-background w-100">
           <div class="container">
-            <marquee behavior="alternate" direction="">
+            <marquee behavior="initial" direction="">
               <h1>CV. HASEA HATOVLIN COCONUT ARENGA ORGANIC</h1></marquee
             >
             <marquee behavior="initial" direction=""
@@ -151,7 +130,9 @@
               accusantium ut commodi quisquam, blanditiis molestiae deserunt
               fugit temporibus quas corrupti officia!
             </p>
-            <button class="tombol-view mt-3">VIEW MORE</button>
+            <a href="catalogue.html">
+              <button class="tombol-view mt-3">VIEW MORE</button>
+            </a>
           </div>
           <div class="col" data-aos="flip-right" data-aos="duration: 3000">
             <img src="images/product-2.png" alt="" />
@@ -162,7 +143,9 @@
               cupiditate vel similique voluptate sunt deleniti omnis, culpa
               repudiandae quia provident corporis eos ulalalalaalala!
             </p>
-            <button class="tombol-view mt-3">VIEW MORE</button>
+            <a href="catalogue.html">
+              <button class="tombol-view mt-3">VIEW MORE</button>
+            </a>
           </div>
           <div class="col" data-aos="flip-left">
             <img src="images/product-3.png" alt="" />
@@ -173,7 +156,9 @@
               accusantium ut commodi quisquam, blanditiis molestiae deserunt
               fugit temporibus quas corrupti officia!
             </p>
-            <button class="tombol-view mt-3">VIEW MORE</button>
+            <a href="catalogue.html">
+              <button class="tombol-view mt-3">VIEW MORE</button>
+            </a>
           </div>
         </div>
         <div class="row content-3">
@@ -226,16 +211,19 @@
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     </div>
+
     <a href="https://wa.me/6281234567890" target="_blank">
       <div class="fixed-bottom">
-        <iconify-icon
-          icon="ic:round-message"
-          style="color: green; margin: 20px"
-          width="70"
-          height="70"
-        ></iconify-icon>
+        <img
+          src="images/whatsapp.png"
+          alt=""
+          width="60px"
+          height="60px"
+          style="margin: 20px"
+        />
       </div>
     </a>
+
     <!-- FOOTER -->
     <footer>
       <div class="container">
@@ -281,7 +269,7 @@
           </div>
           <hr style="color: black; border: 2px solid black" class="mt-2" />
           <p class="pt-2">
-            © Copyright 2022 | CV.Hasea Hatovlin Cocunut Arenga Organic
+            © Copyright 2023 | CV.Hasea Hatovlin Coconut Arenga Organic
           </p>
         </div>
       </div>
@@ -303,6 +291,12 @@
           "google_translate_element"
         );
       }
+      const popoverTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="popover"]'
+      );
+      const popoverList = [...popoverTriggerList].map(
+        (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
+      );
     </script>
     <script
       type="text/javascript"

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
 :root {
   --primary-color: #50b849;
   --secondary-color: #fefefe;
@@ -126,6 +127,34 @@ body {
 .content-2 {
   margin-top: 100px;
   margin-bottom: 100px;
+}
+
+.content-3 h1 {
+  font-family: Poppins;
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 39px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #524a4e;
+}
+
+.content-3 h3 {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.content-3 p {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
 .tombol-view {
