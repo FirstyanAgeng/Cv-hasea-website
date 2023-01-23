@@ -4,12 +4,6 @@ function darkMode() {
   body.classList.toggle("dark");
 }
 
-printBtn = document.getElementById("print");
-
-printBtn.addEventListener("click", function () {
-  print();
-});
-
 AOS.init();
 
 // You can also pass an optional settings object

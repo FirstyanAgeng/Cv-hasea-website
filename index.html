@@ -19,70 +19,83 @@
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
     <title>CV Hasea</title>
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-dark navbar-expand-lg sticky-top">
-      <div class="container">
-        <a href="#"><img src="images/logo.png" alt="" class="logo" /></a>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="images/logo.png" alt="" class="logo"
+        /></a>
         <button
           class="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">CV HASEA</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body container">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-1">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="/about.html">About Us</a>
-            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about.html">About Us</a>
+              </li>
 
-            <li>
-              <a class="nav-link" aria-current="page" href="/catalogue.html"
-                >Catalogue</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/contact.html"
-                >Contact Us</a
-              >
-            </li>
-          </ul>
-          <!-- dark mode -->
-
-          <!-- dark mode end -->
-
-          <div class="form-check form-switch link-light nav-link ps-5 pt-1">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              role="switch"
-              id="checkbox"
-              onclick="darkMode()"
-            />
-            <label class="form-check-label" for="checkbox"></label>
+              <li>
+                <a class="nav-link" aria-current="page" href="/catalogue.html"
+                  >Catalogue</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/contact.html"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+            <div class="form-check form-switch link-light nav-link ps-5 pt-2">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                role="switch"
+                id="checkbox"
+                onclick="darkMode()"
+              />
+              <label class="form-check-label" for="checkbox"></label>
+            </div>
           </div>
         </div>
       </div>
     </nav>
-    <!-- Navbar End -->
+    <!-- akhir navbar -->
 
     <!-- Beranda -->
 
     <section>
       <div class="content-beranda">
         <div class="blur-background w-100">
-          <div class="container">
+          <div class="container mt-5">
             <marquee behavior="initial" direction="">
               <h1>CV. HASEA HATOVLIN COCONUT ARENGA ORGANIC</h1></marquee
             >
@@ -104,9 +117,14 @@
       <div class="container">
         <div class="row">
           <div class="col-5">
-            <img src="images/item-1.png" alt="" data-aos="fade-up" />
+            <img
+              src="images/item-1.png"
+              alt=""
+              data-aos="fade-up"
+              id="coco-1"
+            />
           </div>
-          <div class="col-7">
+          <div class="col-7" id="coco-desk">
             <h1>CV. HASEA HATOVLIN COCONUT ARENGA ORGANIC</h1>
             <p>
               We were founded in 2021, under the name CV.Hasea Hatovlin Coconut
@@ -169,6 +187,7 @@
               alt=""
               data-aos="fade-left"
               data-aos-duration="5000"
+              id="testimoni"
             />
           </div>
           <div class="col-7 mt-5">
@@ -186,7 +205,7 @@
                   quality products at the best prices. now I have subscribed
                   with this company. continued success cv.hasea.
                 </p>
-                <img src="images/bintang.png" alt="" />
+                <img src="images/bintang.png" alt="" id="star" />
               </div>
             </div>
           </div>
