@@ -318,6 +318,10 @@ iframe {
   margin-bottom: -70px;
 }
 
+.wa-icon {
+  width: 100px;
+}
+
 footer {
   height: 55vh;
   padding-top: 80px;
