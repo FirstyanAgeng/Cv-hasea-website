@@ -73,7 +73,8 @@
                 >
               </li>
             </ul>
-            <div class="form-check form-switch link-light nav-link ps-5 pt-2">
+            <button onclick="darkMode()" class="btn-dark">Dark Mode</button>
+            <!-- <div class="form-check form-switch link-light nav-link ps-5 pt-2">
               <input
                 class="form-check-input"
                 type="checkbox"
@@ -82,7 +83,7 @@
                 onclick="darkMode()"
               />
               <label class="form-check-label" for="checkbox"></label>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -153,6 +154,8 @@
         </div>
       </div>
     </section>
+
+    <!-- whatsapp icon -->
     <a href="https://wa.me/628111335951" target="_blank">
       <div class="fixed-bottom wa-icon">
         <img
@@ -164,6 +167,8 @@
         />
       </div>
     </a>
+    <!-- end of whatsapp -->
+
     <!-- Map -->
     <div class="text-center" data-aos="fade-up-right">
       <iframe
@@ -178,6 +183,7 @@
     </div>
     <!-- End of Map -->
 
+    <!-- footer -->
     <footer>
       <div class="container">
         <div class="row">
@@ -227,17 +233,16 @@
         </div>
       </div>
     </footer>
-    <!-- JavaScript Bundle with Popper -->
+    <!-- end of footer -->
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="script.js"></script>
-    <script>
-      AOS.init();
+    <script src="https://unpkg.com/aos@next/dist/aos.js">
+      AOS.init()
     </script>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -1,7 +1,16 @@
 let body = document.body;
+// if(document.getElementById('checkbox').checked){
 
+if (localStorage.getItem("theme") == "dark") {
+  darkMode();
+}
 function darkMode() {
   body.classList.toggle("dark");
+  if (body.classList.contains("dark")) {
+    localStorage.setItem("theme", "dark");
+  } else {
+    localStorage.removeItem("theme");
+  }
 }
 
 AOS.init();

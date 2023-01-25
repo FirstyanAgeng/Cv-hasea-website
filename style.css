@@ -8,6 +8,14 @@
   --bg-primary: #787878;
 }
 
+.btn-dark {
+  background-color: gray;
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 20px;
+  font-size: 10px;
+}
 .dark {
   background-color: #524a4e;
   color: white;
@@ -198,9 +206,8 @@ body {
 }
 
 .img-about {
-  width: 533px;
-  height: 614px;
-  background: url(1658541246105.jpg);
+  width: 500px;
+  height: 600px;
   filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
   border-radius: 35px;
 }
@@ -231,7 +238,10 @@ body {
 }
 
 /* CATALOGUE */
-
+.img-card {
+  width: 300px;
+  height: 280px;
+}
 .content-catalogue {
   background: url(images/bg-4.png);
   background-size: cover;
@@ -251,7 +261,7 @@ body {
 
 .kartu-katalog {
   width: 300px;
-  height: 370px;
+  height: 410px;
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
@@ -305,9 +315,12 @@ form {
 }
 
 .btn-send {
-  padding: 20px;
+  padding: 15px;
   border: none;
   margin: 10px;
+  background-color: green;
+  color: white;
+  border-radius: 10px;
 }
 .isi-hero {
   padding-top: 120px;
