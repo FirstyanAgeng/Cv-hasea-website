@@ -65,12 +65,12 @@ body {
 .content-beranda h1 {
   font-family: "Poppins";
   font-weight: 800;
-  font-size: 62px;
+  font-size: 42px;
 }
 
 .content-beranda p {
   font-family: Poppins;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 300;
   line-height: 29px;
   letter-spacing: 0em;
@@ -207,7 +207,7 @@ body {
 
 .img-about {
   width: 500px;
-  height: 600px;
+  height: 500px;
   filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
   border-radius: 35px;
 }
@@ -238,10 +238,6 @@ body {
 }
 
 /* CATALOGUE */
-.img-card {
-  width: 300px;
-  height: 280px;
-}
 .content-catalogue {
   background: url(images/bg-4.png);
   background-size: cover;
@@ -255,8 +251,14 @@ body {
 }
 
 .dark .kartu-katalog {
-  background-color: #524a4e;
-  color: white;
+  color: black;
+}
+
+.img-card {
+  width: 100%;
+  height: 270px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .kartu-katalog {
@@ -265,6 +267,21 @@ body {
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
+}
+
+.btn-catalogue {
+  padding: 10px;
+  border: none;
+  background-color: green;
+  color: white;
+  border-radius: 12px;
+}
+
+.btn-catalogue:hover {
+  cursor: pointer;
+  background-color: white;
+  color: green;
+  transition: 0.3s ease;
 }
 
 /* Isi Catalogue */
